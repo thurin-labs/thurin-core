@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+out/
+target/
+
+# Foundry
+cache/
+broadcast/
+docs/
+lcov.info
+
+# Coverage
+coverage/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+
+# Reports
+reports/
+
+# IDE
+.idea/
+.vscode/

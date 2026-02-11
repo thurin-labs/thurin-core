@@ -1,0 +1,42 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.28"
+optimizer = true
+optimizer_runs = 200
+fs_permissions = [{ access = "read", path = "test/fixtures" }]
+
+[profile.default.fmt]
+line_length = 100
+tab_width = 4
+bracket_spacing = true
+
+[profile.ci]
+# Inherits from default
+
+[rpc_endpoints]
+# Mainnets
+mainnet = "${MAINNET_RPC_URL}"
+base = "https://mainnet.base.org"
+zksync = "https://mainnet.era.zksync.io"
+scroll = "https://rpc.scroll.io"
+linea = "https://rpc.linea.build"
+polygon_zkevm = "https://zkevm-rpc.com"
+
+# Testnets
+sepolia = "${SEPOLIA_RPC_URL}"
+base_sepolia = "https://sepolia.base.org"
+zksync_sepolia = "https://sepolia.era.zksync.dev"
+scroll_sepolia = "https://sepolia-rpc.scroll.io"
+linea_sepolia = "https://rpc.sepolia.linea.build"
+polygon_zkevm_cardona = "https://rpc.cardona.zkevm-rpc.com"
+
+[etherscan]
+# Etherscan V2: single API key works for all networks
+mainnet = { key = "${ETHERSCAN_API_KEY}" }
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
+base = { key = "${ETHERSCAN_API_KEY}", url = "https://api.basescan.org/api" }
+base_sepolia = { key = "${ETHERSCAN_API_KEY}", url = "https://api-sepolia.basescan.org/api" }
+scroll_sepolia = { key = "${ETHERSCAN_API_KEY}", url = "https://api-sepolia.scrollscan.com/api" }
+linea_sepolia = { key = "${ETHERSCAN_API_KEY}", url = "https://api-sepolia.lineascan.build/api" }
