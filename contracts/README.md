@@ -1,4 +1,4 @@
-# @thurinlabs/contracts
+# @thurinlabs/thurin-contracts
 
 Solidity smart contracts for Thurin identity verification.
 
@@ -119,7 +119,7 @@ interface IThurinPoints {
 ### Simple: Just Check SBT
 
 ```solidity
-import { IThurinSBT } from "@thurinlabs/contracts/interfaces/IThurinSBT.sol";
+import { IThurinSBT } from "@thurinlabs/thurin-contracts/interfaces/IThurinSBT.sol";
 
 contract MyDapp {
     IThurinSBT public sbt;
@@ -138,8 +138,8 @@ contract MyDapp {
 ### Advanced: Verify Specific Claims
 
 ```solidity
-import { IThurinSBT } from "@thurinlabs/contracts/interfaces/IThurinSBT.sol";
-import { IThurinVerifier } from "@thurinlabs/contracts/interfaces/IThurinVerifier.sol";
+import { IThurinSBT } from "@thurinlabs/thurin-contracts/interfaces/IThurinSBT.sol";
+import { IThurinVerifier } from "@thurinlabs/thurin-contracts/interfaces/IThurinVerifier.sol";
 
 contract AcmeCasino {
     IThurinSBT public sbt;

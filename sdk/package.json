@@ -1,5 +1,5 @@
 {
-  "name": "@thurinlabs/sdk",
+  "name": "@thurinlabs/thurin-sdk-core",
   "version": "0.0.1",
   "description": "TypeScript SDK for Thurin mDL verification",
   "license": "Apache-2.0",

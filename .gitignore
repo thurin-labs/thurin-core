@@ -28,3 +28,5 @@ reports/
 # IDE
 .idea/
 .vscode/
+
+claude.md

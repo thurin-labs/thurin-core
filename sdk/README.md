@@ -1,4 +1,4 @@
-# @thurinlabs/sdk
+# @thurinlabs/thurin-sdk-core
 
 TypeScript SDK for Thurin mDL zero-knowledge proofs.
 
@@ -14,7 +14,7 @@ This SDK enables web applications to:
 ## Installation
 
 ```bash
-pnpm add @thurinlabs/sdk
+pnpm add @thurinlabs/thurin-sdk-core
 ```
 
 ## Dependencies
@@ -28,7 +28,7 @@ The SDK uses these key dependencies:
 ## Quick Start
 
 ```typescript
-import { Thurin, initProver } from '@thurinlabs/sdk';
+import { Thurin, initProver } from '@thurinlabs/thurin-sdk-core';
 import circuit from './thurin.json'; // Compiled Noir circuit
 
 // Initialize prover once on app load (loads WASM)
@@ -106,7 +106,7 @@ Points system for users and dApps:
 ### Initialization
 
 ```typescript
-import { initProver, isProverInitialized, destroyProver } from '@thurinlabs/sdk';
+import { initProver, isProverInitialized, destroyProver } from '@thurinlabs/thurin-sdk-core';
 
 // Initialize prover (required before generateProof)
 await initProver(circuit);
@@ -236,7 +236,7 @@ contract MyDapp {
 ## Utilities
 
 ```typescript
-import { hashEventId, NO_REFERRER } from '@thurinlabs/sdk';
+import { hashEventId, NO_REFERRER } from '@thurinlabs/thurin-sdk-core';
 
 // Hash event ID to bytes32
 const eventIdHash = hashEventId('my-event');
